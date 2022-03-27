@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game_Search</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Pathway+Gothic+One&family=Roboto:wght@400;700&family=Rubik:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="img/logo-placeholder.png" srcset="img/logo-placeholder@2x.png 2x,
+             img/logo-placeholder@3x.png 3x" id="logoPlaceholder">
+            <nav class="navBar">
+                <div class="games">
+                    Games
+                    <img src="img/path-2.svg" class="path-2">
+                </div>
+                <div class="membership">
+                    Membership
+                </div>
+                <div class="download">
+                    Download
+                </div>
+                <div class="blog">
+                    Blog
+                </div>
+                <div class="support">
+                    Support
+                </div>
+                <div class="register Text-Style">
+                    LET'S PLAY
+                </div>
+            </nav>
+        </header>
+        <main class="mainSection">
+            <section class="searchSection">
+                <h1>Lorem ipsum dolor sit amet consectetur</h1>
+                <p>With the Cloud Gaming, you can join, play, and share games online with anyone in the world. Play any
+                    game on any device!</p>
+                <div class="searchBar">
+                    <button id="submit" type="submit" name="Submit">
+                        <img src="img/combined-shape.svg" id="combinedShape">
+                    </button>
+                    <input id="searchInput" type="text" name="searchInput" placeholder="Search Games" value="" />
+                </div>
+            </section>
+            <section class="filterListSection">
+                <div class="browseHeader">
+                    <h1>Browse Games</h1>
+                    <div id="togleSorting" class="togleButton">Z-A</div>
+                </div>
+                <div class="filterListLayout">
+                    <div class="filterLayout">
+                        <h1>State</h1>
+                        <label class="checkboxLabel">Available
+                            <input type="checkbox" id="stateInput" value="available">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkboxLabel">Patching
+                            <input type="checkbox" id="stateInput" value="patching">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkboxLabel">Maintenance
+                            <input type="checkbox" id="stateInput" value="maintenance">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h1 id="genreHeading">Genre Filters</h1>
+                        <label class="checkboxLabel">Shooters
+                            <input type="checkbox" id="genreInput" value="shooters">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkboxLabel">Action
+                            <input type="checkbox" id="genreInput" value="action">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkboxLabel">RPG
+                            <input type="checkbox" id="genreInput" value="rpg">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkboxLabel">Racing
+                            <input type="checkbox" id="genreInput" value="racing">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkboxLabel">MOBA/MMO
+                            <input type="checkbox" id="genreInput" value="moba">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkboxLabel">Simulation
+                            <input type="checkbox" id="genreInput" value="simulation">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkboxLabel">Strategy
+                            <input type="checkbox" id="genreInput" value="strategy">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkboxLabel">Sports
+                            <input type="checkbox" id="genreInput" value="sports">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkboxLabel">Kids/Family
+                            <input type="checkbox" id="genreInput" value="kids">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkboxLabel">Casual
+                            <input type="checkbox" id="genreInput" value="casual">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkboxLabel">Demo
+                            <input type="checkbox" id="genreInput" value="demo">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkboxLabel">Horror
+                            <input type="checkbox" id="genreInput" value="horror">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkboxLabel">Platformer
+                            <input type="checkbox" id="genreInput" value="platformer">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkboxLabel">Battle Royale
+                            <input type="checkbox" id="genreInput" value="battle royale">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkboxLabel">Adventure
+                            <input type="checkbox" id="genreInput" value="adventure">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkboxLabel">Open World
+                            <input type="checkbox" id="genreInput" value="open world">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="listLayout">
+                    </div>
+                </div>
+
+            </section>
+        </main>
+        <footer>
+            <div class="footerBar">
+                <ul class="footerNavBar">
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">Membership</a></li>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Service Status</a></li>
+                </ul>
+                <div class="followUsSqr">
+                    <p>Follow Us!</p>
+                    <img src="img/icon-facebook.svg" class="iconFacebook">
+                    <img src="img/icon-twitter.svg" class="iconTwitter">
+                    <img src="img/icon-instagram.svg" class="iconInstagram">
+                    <img src="img/icon-youtube.svg" class="iconYoutube">
+                </div>
+                <div class="siteLangSqr">
+                    <p>Site Language</p>
+                    <div class="langSelect">
+                        <span>English</span>
+                        <img src="img/icons-arrow-large.svg" class="iconsArrowLarge">
+                    </div>
+                </div>
+            </div>
+            <div class="termsBar">
+                <div>
+                    <span>Terms of Use</span>
+                    <span>Privacy Policy</span>
+                    <span>Cookies</span>
+                </div>
+                <div>
+                    All rights reserved
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

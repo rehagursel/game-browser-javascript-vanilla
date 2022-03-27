@@ -1,0 +1,372 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    margin: 0 auto;
+    background-color: white;
+    max-width: 1440px;
+    min-width: 1250px;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    padding: 0 120px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#logoPlaceholder {
+    width: 317px;
+    height: 54px;
+    margin-right: 100px;
+    object-fit: contain;
+}
+
+.navBar {
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    letter-spacing: 0.57px;
+    font-stretch: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.games {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: #76b900;
+}
+
+.path-2 {
+    width: 24px;
+    height: 20px;
+    object-fit: contain;
+    margin-top: 8px;
+    margin-bottom:1px;
+}
+
+.register {
+    width: 185px;
+    height: 40px;
+    color: white;
+    background-color: #76b900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainSection {
+    width: 100%;
+    height: auto;
+    color: white;
+    background-color: black;
+}
+
+.searchSection {
+    padding: 90px 323px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #76b900;
+}
+
+.searchSection h1 {
+    font-size: 40px;
+}
+
+.searchSection p {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 15px;
+    line-height: 1.3;
+}
+
+.filterListSection {
+    padding: 51px 120px 60px;
+}
+
+.filterListSection h1 {
+    margin-top: 13px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.filterListLayout {
+    margin-top: 33px;
+    display: flex;
+    gap: 20px;
+}
+
+.filterLayout {
+    width: 386px;
+   height:max-content;
+    padding: 40px 0 60px 30px;
+    box-sizing: border-box;
+    background-color: #1e1e1e;
+}
+
+.filterLayout h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #afafaf;
+    margin-bottom: 6px;
+}
+
+.listLayout {
+    width: 794px;
+}
+
+.group {
+    margin-bottom: 30px;
+    padding: 30px;
+    background-color: #1e1e1e;
+}
+
+.groupNameBox {
+    width: 60px;
+    height: 60px;
+    background-image: url(img/polygon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+
+.groupName {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.printListArea {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.printRow {
+    width: 45%;
+    margin-top: 1rem;
+    color: #afafaf;
+}
+
+.searchBar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 49px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+#searchInput {
+    width: 90%;
+    height: 56px;
+    background-color: white;
+    outline: none;
+    border: none;
+    padding: 0 2rem 0 1rem;
+    font-size: 20px;
+    color:#8e9fad;
+}
+
+#submit {
+    width: 10%;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+#combinedShape {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.checkboxLabel {
+    display: block;
+    position: relative;
+    padding-left: 50px;
+    margin-top: 24px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+    color: #afafaf;
+  }
+  
+  .checkboxLabel input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #afafaf;
+  }
+  
+  .checkboxLabel:hover input ~ .checkmark {
+    background-color: #afafaf;
+  }
+  
+  .checkboxLabel input:checked ~ .checkmark {
+    background-color: #76b900;
+    border:solid 1px #76b900 ;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .checkboxLabel input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .checkboxLabel .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 4px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  #genreHeading{
+      margin-top:47px;
+  }
+
+  .browseHeader{
+      display:flex;
+      justify-content:space-between;
+  }
+
+  #togleSorting{
+      background-color: #76b900;
+      width:130px;
+      justify-self: flex-end;
+      display: flex;
+      align-items: center;
+      justify-content:center;
+      font-weight: bold;
+      font-size: 20px;
+      letter-spacing: .5rem;
+  }
+
+  #togleSortingReverse{
+    background-color: #f1cb15;
+    width:130px;
+    justify-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: .5rem;
+    color:#7a7a7a;
+}
+
+.footerBar{
+    height:114px;
+    display: flex;
+    justify-content: space-between;
+    padding:1.5rem 5rem;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.footerNavBar{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.footerNavBar *{
+    text-decoration: none;
+    color: black;
+    list-style-type:none;
+    margin-top: .4rem;
+    margin-right: 1.5rem;
+}
+
+.footerBar p{
+    margin-bottom:.9rem;
+    font-weight: bold;
+}
+
+.iconsArrowLarge{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    object-position: bottom;
+}
+
+.langSelect{
+    display: flex;
+    justify-content:left;
+}
+
+.followUsSqr img{
+    margin-right: 1rem;
+}
+
+.termsBar{
+    height:41px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 5rem;
+    background-color:black;
+    color: white;
+    font-size: 12px;
+}
+
+.termsBar span{
+    font-weight: bold;
+}
